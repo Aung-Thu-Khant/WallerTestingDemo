@@ -67,10 +67,8 @@ public class HomeFg extends Fragment {
 
 //        transactionAdapter = new TransactionAdapter(getContext(),transactionModels);
 //        home_rv.setAdapter(transactionAdapter);
-
         return view;
     }
-
     private void loadFragment(Fragment fragment,boolean stack){
         FragmentManager manager = getActivity().getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();

@@ -125,8 +125,6 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
          void ClickLister(TransactionModel model);
     }
 
-
-
     private void loadFragment(Fragment fragment, boolean stack){
         if(fragment != null){
             FragmentManager manager = fragment.getFragmentManager();

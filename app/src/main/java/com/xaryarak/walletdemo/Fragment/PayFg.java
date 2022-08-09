@@ -55,10 +55,8 @@ public class PayFg extends Fragment implements TransactionAdapter.ItemClickListe
         transactionModels.add(m7);
         transactionModels.add(m8);
         transactionModels.add(m9);
-
         transactionAdapter = new TransactionAdapter(getContext(),transactionModels,this);
         payRv.setAdapter(transactionAdapter);
-
         SearchView payListSearch = view.findViewById(R.id.payListSearch);
         payListSearch.onActionViewExpanded();
         payListSearch.clearFocus();
@@ -78,8 +76,6 @@ public class PayFg extends Fragment implements TransactionAdapter.ItemClickListe
 
         return view;
     }
-
-
     @Override
     public void ClickLister(TransactionModel model) {
         FragmentManager manager = getActivity().getSupportFragmentManager();
