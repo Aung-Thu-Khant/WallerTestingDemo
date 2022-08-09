@@ -35,7 +35,7 @@ public class HomeFg extends Fragment {
         payLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new CategoryFg(),true);
+                loadFragment(new PayFg(),true);
             }
         });
 
@@ -65,8 +65,8 @@ public class HomeFg extends Fragment {
         transactionModels.add(m8);
         transactionModels.add(m9);
 
-        transactionAdapter = new TransactionAdapter(getContext(),transactionModels);
-        home_rv.setAdapter(transactionAdapter);
+//        transactionAdapter = new TransactionAdapter(getContext(),transactionModels);
+//        home_rv.setAdapter(transactionAdapter);
 
         return view;
     }
